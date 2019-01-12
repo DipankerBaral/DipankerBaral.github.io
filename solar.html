@@ -1,0 +1,362 @@
+<!Doctype html>
+<html>
+  <head>
+  <title>Solar</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" type="text/css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+  </head>
+
+
+<body>
+  <header>
+      <div class="logo"> <a href="index.html"><img src="logo.png" alt width="200" height="80"></a> </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li ><a href="AboutUs.html">About Us</a></li>
+           <li class="sub-menu"><a href="#">Gallery</a>
+        <ul>
+              <li>
+                <a href="g-solar.html">Solar</a>
+              </li>
+              <li>
+                <a href="g-roofing.html">Roofing</a>
+              </li>
+              <li>
+                <a href="g-exterior-paints.html">Exterior Painting</a>
+              </li>
+              <li>
+                <a href="g-fence.html">Fences</a>
+              </li>
+              
+               <li>
+                <a href="g-windows.html">Windows</a>
+              </li>
+               <li>
+                <a href="g-patios.html">Patio Cover</a>
+              </li>
+          <li>
+                <a href="g-HVAC.html">HVAC</a>
+              </li>
+              <li>
+                <a href="g-concrete.html">Concrete</a>
+              </li>
+               <li>
+                <a href="g-hardscapes.html">Hardscapes</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="sub-menu"><a href="#">Services</a>
+            <ul>
+               <li>
+                <a href="solar.html">Solar</a>
+              </li>
+              <li>
+                <a href="roofing.html">Roofing</a>
+              </li>
+              <li>
+                <a href="exterior-painting.html">Exterior Painting</a>
+              </li>
+              <li>
+                <a href="fence.html">Fences</a>
+              </li>
+              
+               <li>
+                <a href="windows.html">Windows</a>
+              </li>
+               <li>
+                <a href="patios.html">Patio Cover</a>
+              </li>
+               <li>
+                <a href="HVAC.html">HVAC</a>
+              </li>
+              <li>
+                <a href="concrete.html">Concrete</a>
+              </li>
+               <li>
+                <a href="hardscapes.html">Hardscapes</a>
+              </li>
+
+            </ul>
+          </li>
+          
+          
+         
+          <li ><a href="#Contact">Contact Us</a>
+          
+            </li>
+
+
+        </ul>
+      </nav>
+      <div class="menu-toggle">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+    </header>
+      </body>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(
+        function() {
+          $('.menu-toggle').click(function() {
+            $('nav').toggleClass('active')
+          })
+
+          $('ul li').click(function() {
+            $(this).siblings().removeClass('active');
+            $(this).toggleClass('active');
+          })
+        }
+      )
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+      $(window).on('scroll',function(){
+        if($(window).scrollTop()){
+          $('header').addClass('black');
+        }
+        else{
+          $('header').removeClass('black');
+        }
+      })
+
+    </script>
+
+  <section id="middle-page" class="middle">
+    <div class="wrap">
+      <div id="arrow-left" class="arrow"></div>
+      <div id="slider">
+        <div class="slide slide1">
+          <div class="slide-content">
+            <div class="text-text">
+              <h1 class="services-1" style="display: block">SOLAR SERVICES</h1>
+
+            
+        
+          </div>
+          </div>
+          </div>  
+
+            <div class="slide slide2">
+          <div class="slide-content">
+
+            <div class="text-text">
+              <h4 class="text-text1">Solar,Roofing,Exterior Paints and Many more!!</h4>
+        
+            
+
+          </div>
+          </div>
+        </div>
+            <div class="slide slide3">
+          <div class="slide-content">
+
+            <div class="text-text">
+              <h4 class="text-text1">It's our pleasure to work for you Dreams!!</h4>
+        
+        
+           
+
+          </div>
+          </div>
+        </div>
+
+
+      <div id="arrow-right" class="arrow"></div>
+      </div>
+      <style>
+
+        .slide1{background-image:url('images/solar.jpg')}
+        .slide2{background-image:url('images/image2.jpg')}
+        .slide3{background-image:url('images/image3.jpg')}
+      </style>
+
+      <script>
+        let sliderImages = document.querySelectorAll(".slide"),
+  arrowLeft = document.querySelector("#arrow-left"),
+  arrowRight = document.querySelector("#arrow-right"),
+  current = 0;
+
+// Clear all images
+function reset() {
+  for (let i = 0; i < sliderImages.length; i++) {
+    sliderImages[i].style.display = "none";
+  }
+}
+
+// Init slider
+function startSlide() {
+  reset();
+  sliderImages[0].style.display = "block";
+}
+
+// Show prev
+function slideLeft() {
+  reset();
+  sliderImages[current - 1].style.display = "block";
+  current--;
+}
+
+// Show next
+function slideRight() {
+  reset();
+  sliderImages[current + 1].style.display = "block";
+  current++;
+}
+
+// Left arrow click
+arrowLeft.addEventListener("click", function() {
+  if (current === 0) {
+    current = sliderImages.length;
+  }
+  slideLeft();
+});
+
+// Right arrow click
+arrowRight.addEventListener("click", function() {
+  if (current === sliderImages.length - 1) {
+    current = -1;
+  }
+  slideRight();
+});
+
+startSlide();
+
+
+
+
+  
+
+</script>
+
+<div class="view-pictures">
+  <span><a href="g-solar.html">View Gallery</a></span>
+</div>
+
+<section class="questions">
+
+  <div class="row">
+    <div class="col-md-6 portfolio-item">
+      <h4>Finest Solar Energy Contractor in the Town</h4>
+      <p>In the present world scenario where every business is attempting to maximize profit by cutting out extra expenses, substituting electricity with solar energy can be very effective in long run. Even for residential purposes, addition of solar equipments is considered beneficial. Friendly Energy Solution  provide you with  the wide range of solar utilities from solar panels to high-capacity batteries. Friendly Energy Solution is already the synonym for trust and belief in the field of Solar Energy Solution. From simple repairing of the equipments to complex installations, Friendly Energy Solution is the name you can trust. Friendly Energy Solution is the perfect place for all your solar energy equipment installation and maintenance. </p>
+    </div>
+
+    <div class="col-md-6 portfolio-item">
+      <h4>Your Satisfaction is All that Matters</h4>
+      <p>Friendly Energy Solution is always working to provide the best service to the customers. Here at  Friendly Energy Solution we deeply communicate with our clients so that we cover all the aspects of their requirement. Through conscientious and attentive examination of the site, we help you generate the maximum amount of energy. A mass of satisfied customers whom we have worked with are the proof of  our reliability and dependability.</p>
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 portfolio-item">
+      <h4>Save Time, Money and Energy</h4>
+      <p>“Are you trying out solar energy for the first time?”If yes then you will be truly amazed how much money and energy you are saving for yourself. Even if you are using solar energy for the first time we are here to guide you and answer all of your questions regarding installation and the benefits of the solar energy. Through many years of working experience in commercial as well as residential field, we aim to provide the best service to you. Our team of experts will be highly dedicated in saving your time via quick installation.  Friendly Energy Solution will always be looking forward to serve you to your full satisfaction.
+        </p>
+    </div>
+
+    <div class="col-md-6 portfolio-item">
+      <h4> Project Closeout and Handover</h4>
+      <p>We give a great deal of importance to project commissioning , closeout and handover.</p>
+
+    </div>
+  </div>
+
+
+</section>
+
+    
+          
+
+
+
+      
+           
+   
+            
+            
+            
+        
+           
+        
+  <footer class="About">
+            <div class="container" style="margin: 0 auto;">
+                <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <div class="Digital-Yatri "   >
+                    <h4 style="color:#fff"style="font-family:'Oak-bold';"><a name="Contact">Friendly Energy Solution</a> </h4>
+                        <p style="color: white;font-family:'Inconsolata';" >3254 Logan ave San Diego ca 92113<br>714-9860456(Call or text)<br>Amit.netzer@yahoo.com</p>
+                    </div>
+                    </div>
+                <div class="col-lg-4 col-md-4">
+
+                    <div class="Quick-links" >
+                    <h4 style="color:#fff"style="font-family:'Oak-bold';">Business Hours</h4>
+                        <p style="color: white;font-family:'Inconsolata';">Monday-Thursday:9am to 5pm<br>Friday:9am to 3pm <br>Saturday:10am to 2pm<br>Sunday:Closed</p>
+                    </div></div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="newsletter">
+                     <h4 style="color:#fff"style="font-family:'Oak-bold';padding-left: 50px">EMAIL</h4>
+                        <div id="newsletter-form">
+                            <form  class="form-inline" target="_blank">
+                            <div class="d-flex flex-row">
+                               <input type="email" placeholder="  Friendly.Energy@yahoo.com">
+                                <button  class="btn btn-primary custom-btn" style="color:black;"><a href="mailto:Friendly.Energy@yahoo.com" style="color:black">SEND ME UPDATES</a></button>
+                                <div class="text-center-block" style="padding-top: 20px">
+                <h4  style="color:#fff">FOLLOW US ON</h4>
+                    <div class="icon-bar">
+                <a href="https://www.facebook.com/Friendly-energy-solutions-380608642501711/" class="facebook"><i class="fa fa-facebook fa-2x social"></i></a> 
+                <a href="#" class="instagram"><i class="fa fa-instagram fa-2x social"></i></a> 
+                <a href="#" class="twitter"><i class="fa fa-twitter fa-2x social"></i></a> 
+                <a href="#" class="linkedin"><i class="fa fa-linkedin fa-2x social"></i></a> 
+                <a href="#" class="google-plus"><i class="fa fa-google-plus fa-2x social"></i></a> 
+                <a href="mailto:Friendly.Energy@yahoo.com" class="Friendly.Energy@yahoo.com"><i class="fa fa-envelope fa-2x social"></i></a>
+                <a href="#" class="yelp"><i class="fa fa-yelp fa-2x social"></i></a> 
+                
+                
+                    </div>
+                        </div>
+                                </div>
+                                
+                            </form>
+                        
+                        </div>
+                    </div>
+                    </div>  
+                </div>
+                
+            
+                 </div>
+
+        </footer>
+        <footer class="copyright" >
+        <div class="row">
+            <h5 class="Yatri" >&copy; 2019 FriendlyEnergySolutions / All Rights Reserved</h5>
+            </div>
+        
+        </footer>
+      
+
+        </div>
+</html>
+                
+                      
+        
+
+
+
+
+                
+                      
+        
