@@ -15,6 +15,32 @@
 
 
 <body>
+  <div class="sidebar-contact">
+    <div class="toggle"></div>
+    <form>
+      <div class="attribute">
+       <a id="none" href="mailto:Friendly.Energy@yahoo.com" class="Friendly.Energy@yahoo.com"><i class="fa fa-envelope fa-2x social" style="padding-right: 50px;"></i>Email Us</a></div>
+       <div>
+       <a id="none" href="#" class="Phone"><i class="fa fa-phone-square fa-2x social aria-hidden="true" style="padding-right: 50px;"></i>714-9860456</a> </div>
+       <a id="none" href="#" class="address"><i <i class="fa fa-address-card-o fa-2x social" aria-hidden="true" style="padding-right: 50px;"></i>3254 Logan ave San Diego ca 92113</a> 
+
+
+      
+
+
+
+    </form> 
+  </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.toggle').click(function(){
+          $('.sidebar-contact').toggleClass('active')
+          $('.toggle').toggleClass('active')
+        })
+      })
+
+    </script>
 	<header>
       <div class="logo"> <a href="index.html"><img src="logo.png" alt width="200" height="80"></a> </div>
       <nav>
