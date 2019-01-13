@@ -446,9 +446,9 @@ table {
 
   position: fixed;
   top:50%;
-  left:-350px;
+  left:-300px;
   transform:translateY(-50);
-  width:350px;
+  width:300px;
   height:auto;
   background:#1e9088;
   padding: 40px;
