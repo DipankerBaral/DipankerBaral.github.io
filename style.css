@@ -579,7 +579,7 @@ svg:not(:root) {
     height: 5rem;
     padding: 0.7rem 1rem;
     float: left;
-    font-size: 1rem;
+    font-size: 2rem;
     letter-spacing: 1px;
     font-weight: 700;
     line-height: normal;
@@ -604,3 +604,5 @@ svg:not(:root) {
     font-size: 20px;
     
 }
+
+
