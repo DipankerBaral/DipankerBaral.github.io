@@ -577,7 +577,6 @@ svg:not(:root) {
 .book-box .box-btn {
     width: 50%;
     height: 5rem;
-    padding: 0.7rem 1rem;
     float: left;
     font-size: 2rem;
     letter-spacing: 1px;
