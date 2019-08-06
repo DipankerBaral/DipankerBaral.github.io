@@ -536,7 +536,7 @@ transition: 0.5s;
 @media only screen and (max-width: 600px) {
 
 .book-box .box-btn svg {
-    font-size: 2rem;
+    font-size: 4rem;
     padding-right: .25rem;
 }
 svg:not(:root).svg-inline--fa {
@@ -568,7 +568,7 @@ svg:not(:root) {
 }
 .book-box .box-btn {
     width: 50%;
-    height: 3rem;
+    height: 5rem;
     padding: 0.7rem 1rem;
     float: left;
     font-size: 1rem;
